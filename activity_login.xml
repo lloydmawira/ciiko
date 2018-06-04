@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#0000ff"
+        android:text="PCEA CIIKO CHURCH"
+        android:textColor="#ffffff"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/User_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:layout_below="@+id/textView1"
+                android:textSize="20dp" />
+            
+            <EditText
+                android:id="@+id/uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/User_Name"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingTop="5dp" />
+            
+            <TextView
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uname"
+                android:text="Password"
+                android:textSize="20dp" />
+            
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Password"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingTop="5dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginBottom="30dp"
+        android:onClick="login"
+        android:text="LOGIN"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="#0000ff" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.example.exa.Register">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="#0000ff"
+        android:text="PCEA CIIKO CHURCH"
+        android:textColor="#ffffff"
+        android:textSize="32dp" />
+  
+    <EditText
+        android:id="@+id/MemberID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Member_ID"
+        android:layout_below="@+id/textView1"/>    
+   
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First_Name"
+        android:layout_below="@+id/MemberID"/>
+       
+    
+     <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last_Name" 
+        android:layout_below="@+id/editFirstName"/>
+     
+   
+    
+     <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User_Name"
+        android:layout_below="@+id/editLastName"/>
+        
+        
+    <EditText
+        android:id="@+id/phoneNO"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:hint="Phone_Number"
+        android:ems="10"
+        android:layout_below="@+id/userName"/>
+    
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gender (male or female)"
+        android:inputType="text"
+        android:layout_below="@+id/phoneNO"/>
+               
+   <EditText
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="District"
+        android:inputType="text"
+        android:layout_below="@+id/gender"/>
+        
+     <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/district"/>
+    
+    
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editTextPassword"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="#0000ff"
+        android:onClick="register"
+        android:text="REGISTER"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+   
+</RelativeLayout>
